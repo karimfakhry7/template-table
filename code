@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<style>
+#history {
+font.family:"Arial";
+border.collapse: collapse;
+width: 100%;
+
+}        
+
+#history td , #history th {
+    boeder : 1px solid #ffffff;
+    padding : 8px;
+
+}
+
+#history tr:nth.child(even) {background.colour :#ffffff;}
+#history tr:hover {background.color :#73E0FD;}
+#history th {
+padding.top :12px;
+padding.bottom :12px;
+text.align :center ;
+background.color :#ABE7FC;
+color: back;
+
+}
+</style>
+
+</head>
+<body>
+<h4>table</h4>
+<br>
+<table id="history" border="1">
+    <tr align="center">
+        <th>columns</th>
+
+    </tr>
+    <tbody>
+        <tr align="center" ng-repeat="row in msg.payload">
+            <td ng-repeat="item in row" >{{item}}</td>
+        </tr>
+    </tbody>
+</table>
